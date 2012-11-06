@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Coustard');
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700');
 /*!
  * Bootstrap v2.2.1
  *
@@ -133,7 +136,7 @@ textarea {
   clear: both;
 }
 .hide-text {
-  font: a;
+  font: 0/0 a;
   color: transparent;
   text-shadow: none;
   background-color: transparent;
@@ -149,7 +152,7 @@ textarea {
 }
 body {
   margin: 0;
-  font-family: "Lucida Grande", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", "Lucida Grande", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 13px;
   line-height: 20px;
   color: #333333;
@@ -885,7 +888,7 @@ h4,
 h5,
 h6 {
   margin: 10px 0;
-  font-family: "Museo Slab", Georgia, "Times New Roman", Times, serif;
+  font-family: "Coustard", Georgia, "Times New Roman", Times, serif;
   font-weight: bold;
   line-height: 20px;
   color: #141414;
@@ -1151,7 +1154,7 @@ input,
 button,
 select,
 textarea {
-  font-family: "Lucida Grande", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", "Lucida Grande", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 label {
   display: block;
@@ -4332,7 +4335,7 @@ input[type="submit"].btn.btn-mini {
 .navbar-search .search-query {
   margin-bottom: 0;
   padding: 4px 14px;
-  font-family: "Lucida Grande", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", "Lucida Grande", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 13px;
   font-weight: normal;
   line-height: 1;
@@ -5764,7 +5767,7 @@ a.badge:hover {
   clear: both;
 }
 .hide-text {
-  font: a;
+  font: 0/0 a;
   color: transparent;
   text-shadow: none;
   background-color: transparent;
@@ -7482,23 +7485,6 @@ a.badge:hover {
 .affix {
   position: fixed;
 }
-/*
- * Fonts
- */
-@font-face {
-  font-family: 'League Gothic';
-  src: url('fonts/league_gothic-webfont.eot');
-  src: url('fonts/league_gothic-webfont.eot?#iefix') format('eot'), url('fonts/league_gothic-webfont.woff') format('woff'), url('fonts/league_gothic-webfont.ttf') format('truetype'), url('fonts/league_gothic-webfont.svg#webfont3XnFyBvL') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Museo Slab';
-  src: url('fonts/museo_slab_500-webfont.eot');
-  src: url('fonts/museo_slab_500-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/museo_slab_500-webfont.woff') format('woff'), url('fonts/museo_slab_500-webfont.ttf') format('truetype'), url('fonts/museo_slab_500-webfont.svg#MuseoSlab500') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
 /* 
  * Scaffolding overrides
  */
@@ -7506,7 +7492,7 @@ body {
   background: url('images/bg.png') repeat #edf0f2;
 }
 .navbar .brand {
-  font-family: "League Gothic", "Museo Slab", "Helvetica Neue", Helvetica, arial, sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, arial, sans-serif;
   font-size: 37px;
   margin-left: 15px;
   text-shadow: 0 1px 1px #000000;
@@ -7614,7 +7600,7 @@ body > .container {
   background-color: transparent !important;
 }
 .container aside nav ul li a {
-  font-family: "Museo Slab", Georgia, "Times New Roman", Times, serif;
+  font-family: "Coustard", Georgia, "Times New Roman", Times, serif;
   padding: 5px 14px 6px;
   display: block;
   color: #ffffff;
@@ -7641,7 +7627,7 @@ body > .container {
 }
 #content .kpi {
   font-size: 23.400000000000002px;
-  font-family: "Museo Slab", Georgia, "Times New Roman", Times, serif;
+  font-family: "Coustard", Georgia, "Times New Roman", Times, serif;
 }
 #content .kpi + div small {
   overflow: hidden;
@@ -7716,7 +7702,7 @@ body > .container {
 #content .sub-header h3 {
   font-size: 11.049999999999999px;
   margin: 0;
-  font-family: "Lucida Grande", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", "Lucida Grande", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: normal;
   line-height: 26px;
 }
