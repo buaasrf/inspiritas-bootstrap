@@ -99,59 +99,80 @@ body > .container {
  *
  */
 
-.container aside {
-    // Add border-radius in upper-left corner.
-    .border-radius(@baseBorderRadius 0 0 0);
+.nav-tabs {
+    a {
+        color: #555;
+    }
+    .active a {
+        .gradientBar(#ff764e, #d64926); 
+        border-top: 1px solid #d27349;
+        color: @white;
+        border-bottom: 1px solid #D27349;
+        cursor: pointer !important;
 
-    nav { 
-        margin-top: 20px;
-        border-top: 1px solid #1c1f20; 
+        &:hover {
+            // When hovering the selected item, don't make it 
+            // darker, instead do nothing
+            .gradientBar(lighten(#ff764e, 4%), lighten(#d64926, 4%));
+            color: @white !important;
+            border-top: 1px solid #d27349 !important;
+            border-left: 1px solid #d27349 !important;
+            border-right: 1px solid #d27349 !important;
+            background-color: transparent !important;
+        }
+    }
+}
 
-        ul li {
-            font-size: @fontSizeLarge;
-            background: #20282B;
-            border-top: 1px solid rgba(255,255,255, 0.05);
-            border-bottom: 1px solid rgba(0,0,0, 0.75);
-            border-right: 1px solid rgba(0,0,0, 0.75);
-            border-left: 1px solid rgba(0,0,0, 0.75);
-            float: none;
+.nav-stacked {
+    .border-radius(@borderRadiusLarge);
 
-            i {
-                margin-right: 5px;
+    li {
+        font-size: @fontSizeLarge;
+        float: none;
+
+        i {
+            margin-right: 5px;
+        }
+
+        a {
+            // Make the <a> elements take full width by using 
+            // display: block, increasing the click area.
+            font-family: @sansFontFamily;
+            padding: @paddingMedium;
+            display: block;
+            color: #555;
+            text-shadow: 0 1px 1px rgba(0,0,0,0.75);
+
+            // Make the background of the button darker when hovering
+            &:hover {
+                color: #555;
             }
+        }
 
-            // A nice, pumpkin-y orange selected menu item
-            &.selected {
-                .gradientBar(#ff764e, #d64926); 
-                border-top: 1px solid #d27349; 
-                border-bottom: 1px solid rgba(0,0,0,0.9);
+        // A nice, pumpkin-y orange selected menu item
+        &.selected, &.active a {
+            .gradientBar(#ff764e, #d64926); 
+            border-top: 1px solid #d27349;
+            color: @white;
+            border-bottom: 1px solid #D27349;
+            cursor: pointer !important;
 
-                a:hover {
-                    // When hovering the selected item, don't make it 
-                    // darker, instead do nothing
-                    background-color: transparent !important;
-                }
-            }
-
-            a {
-                // Make the <a> elements take full width by using 
-                // display: block, increasing the click area.
-                font-family: @sansFontFamily;
-                padding: @paddingMedium;
-                display: block; 
-                color: @white;
-                text-shadow: 0 1px 1px rgba(0,0,0,0.75);
-
-                // Make the background of the button darker when hovering
-                &:hover {
-                    background-color: @blueBlacker !important;
-                    // Keep the white color (override)
-                    color: @white;
-                }
+            &:hover {
+                // When hovering the selected item, don't make it 
+                // darker, instead do nothing
+                .gradientBar(lighten(#ff764e, 4%), lighten(#d64926, 4%));
+                color: @white !important;
+                border-top: 1px solid #d27349 !important;
+                border-left: 1px solid #d27349 !important;
+                border-right: 1px solid #d27349 !important;
+                background-color: transparent !important;
             }
         }
     }
+}
 
+.nav-tabs li a {
+    text-shadow: none !important;
 }
 
 /*
